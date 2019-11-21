@@ -12,14 +12,14 @@ category: react
 
   예를들어
 
-  class squire 은 3x3 각각의 버튼 1개에 대한 컴포넌트이고
+  class square 은 3x3 각각의 버튼 1개에 대한 컴포넌트이고
 
   class board 는 버튼의 선택 정보를 가지고 있는 컴포넌트이다.
 
 
-  board에서 각 버튼의 값을 저장하는 state와 onClick()(버튼 클릭시 이벤트 처리 함수)를 squire에게 넘겨주고
+  board에서 각 버튼의 값을 저장하는 state와 onClick()(버튼 클릭시 이벤트 처리 함수)를 square에게 넘겨주고
 
-  squire에서는 board에게 넘겨받은 값들을 props를 통해 받아 사용할 수 있다.
+  square에서는 board에게 넘겨받은 값들을 props를 통해 받아 사용할 수 있다.
 
 
 # 원본데이터를 건드리지 않고 복사본을 이용하는 이유에 대해서 알게되었다.
