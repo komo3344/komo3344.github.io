@@ -1,5 +1,5 @@
 ---
-title:디자인 패턴(팩토리 패턴)
+title: 디자인 패턴-팩토리 메소드(Factory Method) 파이썬(python)
 date: 2019-11-22
 category: python, design pattern
 ---
