@@ -1,8 +1,8 @@
 ---
 title: 디자인 패턴-팩토리 메소드(Factory Method) 파이썬(python)
 date: 2019-11-22
-tags: 
-categories: python design pattern
+tags: 디자인패턴
+categories: 파이썬 디자인패턴
 ---
 
 ```
