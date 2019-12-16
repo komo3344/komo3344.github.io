@@ -283,18 +283,17 @@ comments:
   disqus:
     shortname            : dev-junyoung-blog # Short-name
 
-# Defaults
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single # single
+      layout: single
       author_profile: true
-      read_time: true # 해당 포스트를 읽은 시간이 표시
-      comments:  true
-      share: true # 포스트 공유 기능을 활성화 할 것인지 정함
+      read_time: false
+      comments: true # 댓글 활성화
+      share: true
       related: true
 # _pages 부분입니다.
    - scope:
