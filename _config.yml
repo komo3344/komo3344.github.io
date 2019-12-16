@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Junyoung Park" # 이름
+  name             : "Junyoung" # 이름
   avatar           : # 프로필 사진 path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부하며 배운 것을 기록." # 이름 아래 나타날 자신의 설명
+  bio              : "...." # 이름 아래 나타날 자신의 설명
   location         : "Korea"
   email            :
   links:
