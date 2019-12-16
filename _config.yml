@@ -15,15 +15,15 @@ remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "나의 기록하는 공간"
+locale                   : "ko" # 타깃 국가 설정
+title                    : "나의 기록하는 공간" # 블로그 좌측상단의 제목
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Junyoung Park"
-description              : "An amazing website."
+name                     : "Study and recode BLOG" # 블로그 이름
+description              : "My blog website." # 블로그 설명
 url                      : "https://komo3344.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : # 블로그 github 레포지토리 GitHub username/repo-name e.g. "mmistakes/minimal-mistakes" 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -65,8 +65,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
+search                   : true # 사이트 우측 상단 검색 활성화 true, false (default)
+search_full_content      : true # 제목이 아닌 내용까지도 검색할 것인지에 대한 설정true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Junyoung Park"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부하며 배운 것을 기록."
+  name             : "Junyoung Park" # 이름
+  avatar           : # 프로필 사진 path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "공부하며 배운 것을 기록." # 이름 아래 나타날 자신의 설명
   location         : "Korea"
   email            :
   links:
@@ -288,7 +288,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: true # 해당 포스트를 읽은 시간이 표시
       comments:  true
-      share: true
+      share: true # 포스트 공유 기능을 활성화 할 것인지 정함
       related: true
