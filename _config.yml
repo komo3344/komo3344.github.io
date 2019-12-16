@@ -277,7 +277,11 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
+    
+comments:
+  provider               : "disqus"
+  disqus:
+    shortname            : dev-junyoung-blog # Short-name
 
 # Defaults
 defaults:
@@ -286,7 +290,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: wide # single
       author_profile: true
       read_time: true # 해당 포스트를 읽은 시간이 표시
       comments:  true
