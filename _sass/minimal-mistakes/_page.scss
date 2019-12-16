@@ -6,15 +6,15 @@
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
 
-  margin-left: auto;
-  margin-right: auto;
+
   }
 
    ========================================================================== */
 
 #main {
   @include clearfix;
-
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -46,11 +46,11 @@ body {
 
 .page {
   @include breakpoint($large) {
+    width: 83.05085%;
     float: right;
-    width: span(8 of 12);
-    margin-right: span(2 of 12);
-    padding-left: gutter(0.5 of 12);
-    padding-right: gutter(2 of 12);
+    margin-right: 0;
+    padding-left: 4.23729%;
+    padding-right: 16.94915%;
   }
 
   @include breakpoint($x-large) {
