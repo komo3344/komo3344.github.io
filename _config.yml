@@ -290,7 +290,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: wide # single
+      layout: single # single
       author_profile: true
       read_time: true # 해당 포스트를 읽은 시간이 표시
       comments:  true
