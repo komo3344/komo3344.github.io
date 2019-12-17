@@ -297,7 +297,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: docs
+      type: posts
     values:
       sidebar:
         nav: "docs"
