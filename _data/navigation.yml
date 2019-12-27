@@ -10,13 +10,10 @@ docs:
   - title: Toy project
     children:
       - title: "Django + Vue project #1"
-        url: /_posts/django/2019-12-16-msa(1).md
+        url: /django/msa(1)/
       - title: "Django + Vue project #2"
-        url: /docs/structure/
-      - title: "Django + Vue project #3"
-        url: /docs/installation/
-      - title: "Django + Vue project #4"
-        url: /docs/upgrading/
+        url: /django/msa(2)/
+
 
   - title: Django
 
