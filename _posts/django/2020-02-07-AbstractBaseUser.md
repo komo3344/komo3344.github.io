@@ -4,7 +4,7 @@ date: 2020-02-07
 ---
 
 **model.py**  
-```django
+```python
 from django.db import models
 from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser, PermissionsMixin
@@ -81,7 +81,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 ```
 **admin.py**
-```django
+```python
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from .models import User
