@@ -56,10 +56,18 @@ class PhotoAdmin(admin.ModelAdmin):
 ```  
 
 get_thumnail 함수를 분석해보면 self는 PhotoAdmin 클래스이고 obj는 모델의 Photo클래스이다.  
+
 장고는 해커가 script코드를 작성하여 공격하는 것을 막기위해 코드내에 script 작성을 막고있다.  
+
 mark_safe는 장고에게 이 부분은 괜찮다고 알려주는 것이다.  
+
 obj.file.url이란 코드를 사용하고 있는데 그 전에 파이썬에 vars, dir이라는 내장 함수가 있다  
+
 python에서 vars([객체])는 모듈, 클래스, 인스턴스, __dict__속성이 있는 다른 객체의 __dict__속성을 리턴해준다.  
+
 즉 해당 객체의 속성과 관련된 것들을 리턴해준다.  
+
 dir([객체]) 객체가 형 또는 클래스 객체면 속성과 base attribute 이름들을 리턴해 준다.  
+
 dir(obj.file)를 찍어보면 여러 값들이 있는데 그중 url은 file의 url을 변경해준다. 그 외에 save, size, width 등의 옵션이 있다.  
+
