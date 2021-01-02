@@ -6,11 +6,11 @@ main:
     url: /tags/
   - title: "Category"
     url: /categories/
-docs:
-  - title: Toy project
-    children:
-      - title: "Django + Vue project #1"
-        url: /django/msa(1)/
+# docs:
+#   - title: Toy project
+#     children:
+#       - title: "Django + Vue project #1"
+#         url: /django/msa(1)/
 
         
         
