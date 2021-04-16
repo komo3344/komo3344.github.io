@@ -23,7 +23,7 @@ tags: 알고리즘
 ```python
 def longestPalindrome(s: str) -> str:
     # 1) 팰린드롬 판별 및 포인트 확장
-    def expand(left:int, right:int) -> str:
+    def expand(left: int, right: int) -> str:
         while left >= 0 and right < len(s) and s[left] == s[right]:
             left -= 1
             right += 1
