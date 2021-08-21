@@ -29,3 +29,48 @@ $ docker container run -it --name {container_name}
 ```
 $ docker container run -d -p 80:80 --name apache httpd:latest
 ```
+
+# Dockerfile
+
+FROM -> base image
+
+RUN -> 이미지를 빌드할때 실행됨
+
+CMD -> 이미지 빌드 후 컨테이너에서 실행
+ENTRYPOINT -> 이미지 빌드 후 컨테이너에서 실행
+
+차이점은 ENTRYPOINT는 불변
+CMD는 사용자가 컨테이너에서 수정가능
+
+---
+
+ONBUILD -> 베이스 이미지에서 자주 사용됨
+
+> Dockerfile.base
+
+```docker
+FROM ubuntu:18.04
+
+ONBUILD RUN echo "Hello, Docker!"
+```
+
+```shell
+ex)
+sudo docker build -t [이미지이름] [Dockerfile 경로]
+-f 옵션은 Dockerfile의 파일명을 명시적으로 알려줌
+$ sudo docker build -t base -f Dockerfile.base .
+```
+
+빌드 중 hello, Docker 라는 텍스트가 보임
+
+> Dockerfile
+
+```docker
+FROM base
+```
+
+```shell
+sudo docker build -t hello .
+```
+
+마찬가지로 빌드 중 hello, Docker 라는 텍스트가 보임
