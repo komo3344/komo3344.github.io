@@ -74,3 +74,10 @@ sudo docker build -t hello .
 ```
 
 마찬가지로 빌드 중 hello, Docker 라는 텍스트가 보임
+
+ENV -> 환경변수 설정  
+ENV에서 할당된 변수는 RUN, CMD, ENTRYPOINT 명령에서 모두 사용 가능하며 선언된 환경변수를 사용하기 위해서는 $를 앞에 붙이면 된다.  
+WORKDIR -> 작업디렉토리 할당 (없으면 생성 후 이동)  
+USER -> 유저할당
+LABLE -> 이미지 버전정보, 작성자 등 이미지 레이블 정보 등록  
+ARG -> Dockerfile 내부 변수 할당
